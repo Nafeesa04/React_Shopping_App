@@ -6,6 +6,8 @@ const productRoutes = require('./routes/product');
 const orderRoutes = require('./routes/order');
 const consumeMessages = require('./kafka/consumer');  
 
+
+
 const cors = require('cors');
 
 dotenv.config();
@@ -15,6 +17,8 @@ connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
