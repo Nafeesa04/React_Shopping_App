@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://onlineshop-backend04.azurewebsites.net', // Backend API base URL
+  baseURL: 'http://localhost:5000/api', // Backend API base URL
 });
 
 export default instance;
